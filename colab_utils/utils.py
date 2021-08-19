@@ -31,7 +31,7 @@ def get_checkpoint(dataset, category):
 
 
 def get_config(file):
-    with open(os.path.join('tutorial_code', 'configs', file), 'r') as f:
+    with open(os.path.join('configs', file), 'r') as f:
         config = yaml.safe_load(f)
     new_config = dict2namespace(config)
     return new_config
